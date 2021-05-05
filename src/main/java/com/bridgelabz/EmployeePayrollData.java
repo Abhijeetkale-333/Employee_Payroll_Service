@@ -5,7 +5,8 @@ public class EmployeePayrollData {
     public String name;
     public double salary;
 
-    public EmployeePayrollData(int id, String name, double salary) {
+    public EmployeePayrollData(Integer id, String name, Double salary) {
+        super();
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -13,10 +14,6 @@ public class EmployeePayrollData {
 
     @Override
     public String toString() {
-        return "EmployeePayrollData{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", salary=" + salary +
-                '}';
+        return "ID = " + id + ", Name = " + name + ", Salary = " + salary;
     }
 }
